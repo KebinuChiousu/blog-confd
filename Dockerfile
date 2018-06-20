@@ -1,5 +1,9 @@
-FROM centos:7.4.1708
-LABEL maintainer "andrew.wippler@gmail.com"
+FROM debian:stable-slim
+LABEL maintainer "kevin@meredithkm.info"
+
+RUN apt-get update && apt-get install -y \
+    python3 \
+ && rm -rf /var/lib/apt/lists/*
 
 # Make dirs
 RUN mkdir -p /etc/confd/{conf.d,templates}

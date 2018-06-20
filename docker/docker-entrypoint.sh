@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
 /usr/local/bin/confd -onetime -backend env
-/usr/bin/chmod +x /echo
-/echo
+chmod +x /echo
+#/echo
+cat /echo.py
+python3 /echo.py

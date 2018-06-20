@@ -1,0 +1,3 @@
+[template]
+src = "pyecho.tmpl"
+dest = "/echo.py"
